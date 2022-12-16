@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick="myMarks()" value="Click me to Enter your marks"/>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        function myMarks(){
+        let result;
+        let marks=prompt("Please enter your marks");
+        // let num=Number(marks);
+        if (marks>=90){
+            
+            result="Excellent. Pass with Distinction.";
+            // console.log(marks);
+        }
+        else if(89>marks && marks>70){
+            result="Well Done. Pass with Honours";
+        }
+        else if(69>marks && marks>55){
+            result="Just passed.";
+        }
+        else{
+            result="Failed. Do better next time.";
+        }
+        document.getElementById("demo").innerHTML=result;
+
+    }
+
+    </script>
+</body>
+</html>
