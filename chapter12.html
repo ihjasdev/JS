@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <input type="button" onclick="myFunction()" value="Try it"/>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        function myFunction(){
+        let text;
+        let favDrink = prompt("What's your favorite cocktail drink?");
+        switch(favDrink) {
+          case "Coca-Cola":
+            text = "Excellent choice! Coca-Cola is good for your soul.";
+            break;
+          case "Pepsi":
+            text = "Pepsi is my favorite too!";
+            break;
+          case "Sprite":
+            text = "Really? Are you sure the Sprite is your favorite?";
+            break;
+          default:
+            text = "I have never heard of that one!";
+        }    
+        document.getElementById("demo").innerHTML = text;
+    }
+        </script>
+</body>
+</html>
