@@ -16,3 +16,4 @@ var greetings='Hello Ihjas';
 console.log(greetings);
 
 console.table({a:1, b:2});
+console.error('This is something wrong');
